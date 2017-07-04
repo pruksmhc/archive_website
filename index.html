@@ -12,6 +12,44 @@
     table-layout: fixed; /*Optional*/
     border-spacing: 10px; /*Optional*/
 }
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .Column
 {
     display: table-cell;
@@ -80,6 +118,8 @@ published book (age 7) sold in national bookstores
 </div></div></div>
 </div>
 <div align="center">
+  <br/>
+  <br/>
 <h2 align="center"> Questions currently occupying my time</h2>
 <a  align="center" style="font-size: 20px;" href="http://fab.cba.mit.edu/classes/MAS.864/people/Yada.Pruksachatkun/">how can we enhance human ability using technology?</a><br/>
 <a align="center" style="font-size: 20px;" href='https://arxiv.org/abs/1606.02270'> what does it mean to truly understand something? </a><br/>
@@ -88,11 +128,73 @@ published book (age 7) sold in national bookstores
 </div>
 <div>
 
+<br/>
+<br/>
+<br/>
+  <h2 align="center"> A Digital Representation of Memory </h2>
+<div align="center"> <p style="font-size: 18px; max-witdth: 100px;"><p>Memory works by repeated exposure and firings - synapses becoming stronger over time. <br/> Switching from the arts to math and computer science in the span fo two years<br/>  has required completley rewiring my brain,and completley immersing myself with a constant influx of new <br/> information. What I found  as hardest to attain is mathematical intuition. Each piece of intuition has come after <br/> countless hours inspecting and taking apart concepts.  However, because <br/>intuition is hardest to come by, it is also the longest to stay in the brain.  <br/>This Google Document is a representation of bits and pieces of this intuition. <br/> <br/>
+
+<a href="https://docs.google.com/document/d/1Ab6p_OhQWV0BKeIpJLGZJA9u2qabUohSGj9Q6BjkbWk/edit?usp=sharing">
+  <img src="backlog.jpg" align="center" style="height: 400px; width: 600px; margin: 0 auto;"/></img></a>
+
+  <h2 align="center"> Projects </h2>
+  <br/>
+<p> From social good focused, to machine learning, I tend to start with the "why" before figuring out the technical know-how  <br/>needed to finish a project. Here is a select few of the projects I have done in the past year. <br/><br/><br/></p>
+
+  <div class="container" style="position:relative; float:left; ">
+  <img src="activerank.jpg" alt="Avatar" style="height: 400px; width: 600px;"class="image">
+  <div class="overlay">
+   <a href="http://www.activerank.co"> <div class="text" style="font-size: 15px;">ActiveRank is an open-source chrome extension that makes data on women in the workplace more interactive. With a click of a button, you can find the pay gap, maternity leave benefits, and percentage of women of the company you are currently browsing online. By making data more transparent, we aim to hold companies accountable to equality among employees and equip female job-seekers with a tool to find out how they may be treated at a company. As featured in WECode (biggest collegiate conference for women in Computer Science) and ReigningIt. </div> </a>
+  </div>
+</div>
+  <div class="container" style="position:relative; float:right; ">
+  <img src="research.jpg" alt="Avatar" style="height: 400px; width: 600px;" class="image">
+  <div class="overlay" >
+   <a href="http://repository.wellesley.edu/cgi/viewcontent.cgi?article=1150&context=scholarship"> <div class="text">
+    How prone are search engines to attackers during the 2016 presidential elections? Over the span of 6 months, we collected data on search engine results of 340 political candidates in Google, Bing, and Yahoo, and measured the vulnerability of each search engine. Research published as part of the ICIW (International Conference on Internet and Web Applications and Services). </div> </a>
+  </div>
+</div>
+
+  <div class="container"  style="position:relative; float:left; margin-top: 30px;">
+  <img src="audio.jpg" alt="Avatar" class="image"  style="height: 330px; width: 730px;">
+  <div class="overlay">
+   <a href="http://fab.cba.mit.edu/classes/MAS.864/people/Yada.Pruksachatkun/final_project.html"> <p style="font-size:13px;   color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);">
+    What if we could control our audio landscape? As someone who frequently has conversations in loud places, I have many times wondered if it was possible to choose to focus on a person, and zone out the rest. That is exactly what I did as a final project for the MIT graduate class Nature of Mathematical Modeling. I did a deep dive into three 
+    approaches - independent component analysis (ICA), deep learning, and compressive sensing, on a single audio file. With the MIT Sandbox Fellowship, I am working on converting the algorithm into an app that gives you the ability to control what you do or don't hear with any pair of earhones and phones. </div> </a>
+  </p>
+</div>
+
+ <div class="container" style="position:relative; float:right; margin-top: 20px;">
+  <img src="fraud.jpg" alt="Avatar" style="height: 350px; width: 600px; " class="image">
+  <div class="overlay">
+   <a href="https://github.com/pruksmhc/fraud_api"> <div class="text">
+    Can you detect who is misusing a service? Using SVMs, I created an algorithm for a consumer sports startup that detected and banned users with 97% accuracy. Here is a Github respo outlining the process and final result.
+  </div> </a>
+  </div>
+</div>
+
+
+  <div class="container" style="position:relative; float:left; margin-top: 20px;">
+  <img src="airbnb.jpg" alt="Avatar" style="height: 400px; width: 400px;" class="image">
+  <div class="overlay">
+   <a href="https://github.com/pruksmhc/AirbnbTakeover"> <div class="text">
+    Can you predict Airbnb's user adoption? Using Bayesian survival analysis, a friend and I modeled the number of 
+    houses in Airbnb over time in the state of New York. </div> </a>
+  </div>
+</div>
+
+<div class="container">
+</div>
+
 </body>
 <footer>
-<p align="center" style="margin-top:40px;" >If you want to discuss any of the above, feel free to reach out at yadacmis@gmail.com! <br/>
-</p>
 </footer>
+<p align="center" style="margin-top:100px; font-size: 20px;" ><strong>If you want to discuss any of the above, feel free to reach out at yadacmis@gmail.com! </strong><br/>
 </div>
 </div>
 </div>
